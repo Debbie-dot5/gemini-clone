@@ -1,8 +1,20 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../../context/context"
 
 const SideBar = () => {
 
 const [extended, setExtended] = useState(false)
+const { 
+  onSent, 
+  prevPrompt, 
+  setRecentPrompt, 
+  recentPrompt, 
+  showResult, 
+  loading, 
+  resultData, 
+  input, 
+  setInput 
+} = useContext(Context);
 
 
 
@@ -20,10 +32,14 @@ const [extended, setExtended] = useState(false)
             
             <div className="recent flex flex-col ">
                 <p className="recent-title mt-[30px] mb-5">Recent</p>
-                <div className="recent-entry flex items-start gap-2.5 p-2.5 pr-[40px] rounded-[50px] text-custom-dark-gray cursor-pointer hover:bg-gray-100">
+                {prevPrompt.map((item, index) => (
+                <div key={index} className="recent-entry flex items-start gap-2.5 p-2.5 pr-[40px] rounded-[50px] text-custom-dark-gray cursor-pointer hover:bg-gray-100">
                     <img className="w-5" src="/message_icon.png" />
-                    <p>What is react..</p>
+                    <p>{item}...</p>
                 </div>
+
+                ))
+                }
             </div>
             : null
            }

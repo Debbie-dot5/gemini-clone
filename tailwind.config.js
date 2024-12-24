@@ -9,6 +9,9 @@ export default {
       colors: {
         'custom-dark-gray': '#282828',
       },
+      padding: {
+        '5p': '5%',
+      }
     },
   },
   plugins: [],

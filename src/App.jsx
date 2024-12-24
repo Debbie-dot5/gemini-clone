@@ -1,5 +1,6 @@
 import Main from "./components/mainSection/main"
 import SideBar from "./components/sideBar/SideBar"
+import ContextProvider from "./context/context"
 
 
 
@@ -7,8 +8,11 @@ import SideBar from "./components/sideBar/SideBar"
 const App = () => {
   return (
     <>
-    <SideBar/>
+    <ContextProvider>
+      <SideBar/>
     <Main />
+    </ContextProvider>
+    
     </>
   )
 }
