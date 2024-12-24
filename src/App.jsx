@@ -1,5 +1,5 @@
-import Main from "./components/mainSection/main"
 import SideBar from "./components/sideBar/SideBar"
+import MainSection from "./components/mainSection/MainSection"
 import ContextProvider from "./context/context"
 
 
@@ -10,7 +10,7 @@ const App = () => {
     <>
     <ContextProvider>
       <SideBar/>
-    <Main />
+      <MainSection />
     </ContextProvider>
     
     </>

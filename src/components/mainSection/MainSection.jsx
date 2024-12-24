@@ -34,7 +34,7 @@ const cards =[
 
 
 
-const Main = () => {
+const MainSection = () => {
 
   const {
     onSent,
@@ -132,4 +132,4 @@ const Main = () => {
   );
 }
 
-export default Main
+export default MainSection
