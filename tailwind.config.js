@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'custom-dark-gray': '#282828',
+          customDark: '#121823',
       },
       padding: {
         '5p': '5%',

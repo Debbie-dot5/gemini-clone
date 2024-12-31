@@ -14,10 +14,43 @@
 
 }
 
+
+body {
+  background-color: white;
+  color: black;
+}
+
+
+
+html.dark .bg-gray-900 {
+  background-color: #1a202c  !important; 
+}
+
+html.dark .text-white {
+  color: white !important; 
+}
+
+
+html.dark .text-black {
+  color: black !important; 
+}
+
+
+
+html.dark .bg-slate-50 {
+  background-color: #121823 !important; 
+  color: white !important; 
+}
+
+
 #root{
   min-height: 100vh;
-  display:
-   flex;
+  display: flex;
+  animation: fadeIn 1.5s;
+}
+
+.fade-in{
+  animation: fadeIn 1.5s;
 }
 
 .greet-span{
@@ -48,5 +81,15 @@
 
   100%{
     background-position:  800px 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
   }
 }

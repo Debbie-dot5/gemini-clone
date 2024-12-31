@@ -1,0 +1,29 @@
+<div
+      onClick={() => newChat()}
+      className={`new-chat mt-[50px] inline-flex items-center gap-2.5 py-[10px] px-[15px] rounded-[50px] text-sm ${
+        isDarkMode
+          ? 'bg-gray-800 text-gray-200 hover:bg-gray-700'
+          : 'bg-blue-50 text-gray-400 hover:bg-gray-100'
+      } cursor-pointer`}
+    >
+      <img className="w-5" src="/plus_icon.png" alt="plus_icon.png" />
+      {extended ? <p>New chat</p> : null}
+    </div>
+
+
+
+     <div
+          onClick={() => newChat()}
+          className="new-chat mt-[50px] inline-flex items-center gap-2.5 py-[10px] px-[15px] bg-blue-50 rounded-[50px] text-sm text-gray-400 cursor-pointer"
+        >
+          <img className="w-5" src="/plus_icon.png" alt="plus_icon.png" />
+          {extended ? <p>New chat</p> : null}
+        </div>
+
+
+        recentPrompt,
+    showResult,
+    loading,
+    resultData,
+    input,
+    setInput,
